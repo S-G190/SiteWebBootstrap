@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f3f3;
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* Cacher la checkbox */
+.menu-toggle {
+    display: none;
+}
+
+/* Menu de base */
+.menu {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex; /* horizontal sur desktop */
+    gap: 1rem;
+}
+
+/* Menu burger pour mobile */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Liens */
+.menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* cacher menu par défaut */
+        flex-direction: column;
+        gap: 0;
+        background-color: #f8f9fa;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Afficher le menu quand checkbox est coché */
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block; /* burger visible */
+    }
+}
