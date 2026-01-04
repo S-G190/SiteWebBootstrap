@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil | G107 Trio3 </title>
+    <title>Création | G107 Trio3 </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="Assets/CSS/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -34,30 +34,127 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
-                            Création
+                            Comment a-t-on installé la VM ?
                         </div>
+                        <h2>Installation d’une machine virtuelle (VM)</h2>
 
                         <p class="card-text lh-lg">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur felis odio, et maximus quam ultrices ac. Nam nisl lectus, blandit ac tincidunt vitae, consequat sit amet augue. Praesent dictum varius euismod. Sed dignissim, eros nec rhoncus sollicitudin, metus eros hendrerit urna, ut elementum augue nisi eu erat. Nullam id euismod nibh. Suspendisse feugiat ut enim sed suscipit. Donec vitae quam eu nulla laoreet maximus. Maecenas euismod ultricies ex in facilisis. Maecenas aliquam tincidunt leo, at euismod metus consectetur id. Duis suscipit lorem et ullamcorper aliquet. Integer tincidunt gravida est, id pharetra est elementum nec. Nulla viverra ante venenatis rutrum molestie.
-
-                            Mauris a pellentesque dolor. Donec dictum porta neque, accumsan iaculis diam ultricies eget. Nullam a sodales mauris. Suspendisse eu neque eleifend, consequat risus a, venenatis libero. Ut dictum vitae arcu gravida hendrerit. Praesent a urna faucibus, lacinia arcu nec, ultricies odio. Vivamus hendrerit libero lacinia dui mollis, quis laoreet metus convallis. In sollicitudin risus id urna porta commodo. Ut pulvinar eget tellus quis consequat. Aliquam quis quam velit. Fusce nisl turpis, finibus quis rhoncus eget, interdum a nunc.
-
-                            Donec pretium elit ac finibus euismod. Curabitur dignissim pretium augue, eu pellentesque neque fermentum in. Suspendisse sagittis mauris eu ornare viverra. Integer consequat iaculis libero a vulputate. Quisque ac tortor in eros elementum convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam iaculis magna in pharetra rutrum.
+                            Cette page présente les différentes étapes suivies pour installer et configurer une machine virtuelle sous Ubuntu à l’aide du logiciel Oracle VirtualBox.
                         </p>
-                    </div>
 
-                    <div class="card-body">
-                        <ul>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                        </ul>
+                        <h3>1. Installation de VirtualBox</h3>
+
+                        <p class="card-text lh-lg">
+                            La première étape consiste à installer un logiciel de virtualisation. Nous avons choisi Oracle VirtualBox car il est gratuit, fiable et simple à utiliser.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Il faut rechercher « VirtualBox » sur Google, accéder au site officiel, cliquer sur « Download », puis télécharger la version correspondant à son système d’exploitation. L’installation se fait ensuite en suivant les instructions affichées à l’écran.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_1.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_2.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <h3>2. Téléchargement du système d’exploitation</h3>
+
+                        <p class="card-text lh-lg">
+                            Afin de pouvoir utiliser la machine virtuelle, un système d’exploitation est nécessaire. Nous avons choisi Ubuntu pour sa stabilité et sa popularité.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Il suffit de rechercher « Ubuntu » sur Google, d’accéder au site officiel, puis de cliquer sur « Télécharger » afin d’obtenir la dernière version stable du système d’exploitation sous forme de fichier ISO.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_3.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_4.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <h3>3. Création de la machine virtuelle</h3>
+
+                        <p class="card-text lh-lg">
+                            Une fois VirtualBox installé, il faut lancer le logiciel puis cliquer sur le bouton « Nouvelle » pour créer une machine virtuelle.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Lors de la création, il est nécessaire de donner un nom à la machine virtuelle, de sélectionner le fichier ISO d’Ubuntu, de désactiver l’installation automatique, puis de définir la quantité de mémoire RAM en fonction des capacités de l’ordinateur.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Enfin, un disque dur virtuel est créé afin de stocker l’ensemble des fichiers nécessaires au fonctionnement de la machine virtuelle.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_5.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_6.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <h3>4. Installation d’Ubuntu</h3>
+
+                        <p class="card-text lh-lg">
+                            Après la création de la machine virtuelle, celle-ci est démarrée afin de lancer l’installation d’Ubuntu.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Il faut alors choisir la langue française, sélectionner le clavier AZERTY, suivre les différentes étapes de configuration, créer un compte utilisateur et lancer l’installation du système.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Une fois l’installation terminée, la machine virtuelle redémarre automatiquement.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_8.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <h3>5. Configuration finale</h3>
+
+                        <p class="card-text lh-lg">
+                            Après le redémarrage, il est nécessaire de se connecter avec le mot de passe créé précédemment, puis d’installer les Additions Invité VirtualBox afin d’améliorer les performances et l’affichage.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Enfin, les différents comptes utilisateurs sont créés et l’environnement est configuré à l’aide du terminal pour répondre aux besoins du projet.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Creation_7.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <h3>6. Machine virtuelle opérationnelle</h3>
+
+                        <p class="card-text lh-lg">
+                            À l’issue de ces étapes, la machine virtuelle Ubuntu est entièrement fonctionnelle et prête à être utilisée pour les travaux demandés, notamment l’installation et la configuration d’un serveur web.
+                        </p>
+
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </main>
 

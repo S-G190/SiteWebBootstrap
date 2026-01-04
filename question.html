@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil | G107 Trio3 </title>
+    <title>Question | G107 Trio3 </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="Assets/CSS/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -37,27 +37,82 @@
                             Question
                         </div>
 
-                        <p class="card-text lh-lg">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur felis odio, et maximus quam ultrices ac. Nam nisl lectus, blandit ac tincidunt vitae, consequat sit amet augue. Praesent dictum varius euismod. Sed dignissim, eros nec rhoncus sollicitudin, metus eros hendrerit urna, ut elementum augue nisi eu erat. Nullam id euismod nibh. Suspendisse feugiat ut enim sed suscipit. Donec vitae quam eu nulla laoreet maximus. Maecenas euismod ultricies ex in facilisis. Maecenas aliquam tincidunt leo, at euismod metus consectetur id. Duis suscipit lorem et ullamcorper aliquet. Integer tincidunt gravida est, id pharetra est elementum nec. Nulla viverra ante venenatis rutrum molestie.
+                        <p class="card-text lh-lg">Définition de la virtualisation
 
-                            Mauris a pellentesque dolor. Donec dictum porta neque, accumsan iaculis diam ultricies eget. Nullam a sodales mauris. Suspendisse eu neque eleifend, consequat risus a, venenatis libero. Ut dictum vitae arcu gravida hendrerit. Praesent a urna faucibus, lacinia arcu nec, ultricies odio. Vivamus hendrerit libero lacinia dui mollis, quis laoreet metus convallis. In sollicitudin risus id urna porta commodo. Ut pulvinar eget tellus quis consequat. Aliquam quis quam velit. Fusce nisl turpis, finibus quis rhoncus eget, interdum a nunc.
+                            La virtualisation est une technologie qui permet de partager les ressources matérielles d’un ordinateur pour faire fonctionner plusieurs environnements virtuels en même temps, chacun avec son propre système d’exploitation.
 
-                            Donec pretium elit ac finibus euismod. Curabitur dignissim pretium augue, eu pellentesque neque fermentum in. Suspendisse sagittis mauris eu ornare viverra. Integer consequat iaculis libero a vulputate. Quisque ac tortor in eros elementum convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam iaculis magna in pharetra rutrum.
-                        </p>
+                            Différence entre émulateur, simulateur et outil de virtualisation
+
+                            Un émulateur est un logiciel qui va reproduire le fonctionnement d’un autre système ou matériel, où on peut utiliser les programmes sans pour autant que ce soit un système complet indépendant.
+
+                            Quant à la virtualisation, ça va être le processus qui partage les ressources matérielles d’un ordinateur pour créer des environnements virtuels. Cette virtualisation est contrôlée et exécutée par un outil de virtualisation comme un hyperviseur, tel que VirtualBox ou bien VMWare Workstation.  </p>
                     </div>
+                    <ul>
+                        <li> La principale différence est que l’émulateur reproduit seulement le fonctionnement d’un système sans créer un système d’exploitation indépendant, alors que la virtualisation permet de créer plusieurs environnements virtuels indépendants avec chacun son propre système d’exploitation, et l’outil de virtualisation est le logiciel qui va réaliser le processus de virtualisation.</li>
+                    </ul>
+                </div>
+            </div>
 
+            <div class="col-12 col-sm-12 col-md-11 col-lg-10 col-xl-9">
+                <div class="card shadow">
                     <div class="card-body">
-                        <ul>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                            <li>Bla bla bla</li>
-                        </ul>
+                        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+                            Type de virtualisation pour les environnements VirtualBox, VMWare Workstation et Stratus
+                        </div>
+                    <p class="card-text lh-lg">
+
+                        Virtualisation de VirtualBox et VMWare Workstation : sont des hyperviseurs de type 2, c’est-à-dire qu’ils utilisent le système d’exploitation de l’ordinateur hôte pour pouvoir installer un système d’exploitation hôte comme Linux ou macOS, dans la machine virtuelle. En d’autres termes, l’hyperviseur va dépendre du système d’exploitation hôte.
+
+                        Virtualisation de Stratus : utilise des hyperviseurs de type 1, c’est-à-dire qu’il va directement s’installer sur l’ordinateur et va contrôler ce matériel. Ainsi il va pouvoir allouer les ressources nécessaires pour installer plusieurs machines virtuelles avec chacun d’entre eux différents systèmes d’exploitation. Ces machines virtuelles marchent comme des ordinateurs indépendants mais partagent les ressources par le biais de l’hyperviseur.
+
+
+
+
+
+                        Forme/lieu de sauvegarde de la machine virtuelle créée
+
+                        Sur VirtualBox, il nous est demandé de créer un disque dur virtuel en définissant sa taille et son emplacement sur l’ordinateur hôte. Donc nous avons sauvegardé notre machine virtuelle dans un dossier, où se trouve tout les fichiers nécessaires au fonctionnement de notre machine virtuelle.
+
+
+
+                        Explication de tous les choix techniques possibles et justification de nos choix pendant la création de la machine virtuelle avec copies d’écran </p>
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Question_1.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <div class="col-12 col-sm-12 col-md-11 col-lg-10 col-xl-9">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <p class="card-text lh-lg">C’est un onglet divisé en 4 étapes pour initialiser notre machine virtuelle avec son nom, son système d’exploitation, sa RAM et son stockage.
+
+                        Dans le premier onglet il faut écrire le nom de la machine virtuelle : il est fortement conseillé d’écrire le nom du système d’exploitation comme nom de VM car VirtualBox reconnaît automatiquement le nom de la machine et par conséquence choisi le système d’exploitation portant un nom similaire.
+
+                        Puis il faut choisir l’ISO : il faut prendre le seul qui nous est proposé et IMPÉRATIVEMENT décocher la case “Proceed with Unattended Installation” qui va se cocher toute seule.
+
+                        Dans le 3ème onglet il faut définir la RAM allouée à la machine virtuelle. Il est conseillé de définir la RAM allouée selon les capacités de son propre ordinateur. Étant donné que j’ai 32 Go de RAM sur mon ordinateur, j’ai alloué 8 Go de RAM, et 8 processeurs du CPU vu que j’en ai 20.
+
+                        Dans le 4ème onglet, il faut créer un disque dur en définissant sa taille et son emplacement dans notre pc, laissez l’emplacement par défaut et mettez 80 Gio en taille puis cliquez sur Finish.</p>
+                        <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+                            Pour la création du compte :
+                        </div>
+
+
+
+                        <p class="card-text lh-lg">Nous avons mis pour nom du compte et le nom d’utilisateur le nom qui nous désigne en tant que trinôme. Ensuite, le nom de la machine virtuelle est désigné par le nom du système d’exploitation.</p>
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Question_2.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </main>
 
