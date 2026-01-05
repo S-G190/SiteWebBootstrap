@@ -37,18 +37,50 @@
                             Question
                         </div>
 
-                        <p class="card-text lh-lg">Définition de la virtualisation
+                        <p class="card-text lh-lg">
+                            <strong>Définition de la virtualisation</strong>
+                        </p>
 
-                            La virtualisation est une technologie qui permet de partager les ressources matérielles d’un ordinateur pour faire fonctionner plusieurs environnements virtuels en même temps, chacun avec son propre système d’exploitation.
+                        <p class="card-text lh-lg">
+                            La <strong>virtualisation</strong> est une technologie qui permet de
+                            <strong>partager les ressources matérielles</strong> d’un ordinateur pour faire
+                            fonctionner <strong>plusieurs environnements virtuels</strong> en même temps,
+                            chacun avec son <strong>propre système d’exploitation</strong>.
+                        </p>
 
-                            Différence entre émulateur, simulateur et outil de virtualisation
+                        <p class="card-text lh-lg">
+                            <strong>Différence entre émulateur, simulateur et outil de virtualisation</strong>
+                        </p>
 
-                            Un émulateur est un logiciel qui va reproduire le fonctionnement d’un autre système ou matériel, où on peut utiliser les programmes sans pour autant que ce soit un système complet indépendant.
+                        <p class="card-text lh-lg">
+                            Un <strong>émulateur</strong> est un logiciel qui va
+                            <strong>reproduire le fonctionnement</strong> d’un autre système ou matériel,
+                            où on peut utiliser les <strong>programmes</strong> sans pour autant que ce soit
+                            un <strong>système complet indépendant</strong>.
+                        </p>
 
-                            Quant à la virtualisation, ça va être le processus qui partage les ressources matérielles d’un ordinateur pour créer des environnements virtuels. Cette virtualisation est contrôlée et exécutée par un outil de virtualisation comme un hyperviseur, tel que VirtualBox ou bien VMWare Workstation.  </p>
+                        <p class="card-text lh-lg">
+                            Quant à la <strong>virtualisation</strong>, ça va être le
+                            <strong>processus qui partage les ressources matérielles</strong> d’un ordinateur
+                            pour créer des <strong>environnements virtuels</strong>. Cette virtualisation est
+                            <strong>contrôlée et exécutée</strong> par un <strong>outil de virtualisation</strong>
+                            comme un <strong>hyperviseur</strong>, tel que <strong>VirtualBox</strong> ou bien
+                            <strong>VMWare Workstation</strong>.
+                        </p>
+
                     </div>
                     <ul>
-                        <li> La principale différence est que l’émulateur reproduit seulement le fonctionnement d’un système sans créer un système d’exploitation indépendant, alors que la virtualisation permet de créer plusieurs environnements virtuels indépendants avec chacun son propre système d’exploitation, et l’outil de virtualisation est le logiciel qui va réaliser le processus de virtualisation.</li>
+                        <li class="card-text lh-lg">
+                            La principale différence est que <strong>l’émulateur</strong> reproduit seulement
+                            le <strong>fonctionnement d’un système</strong> sans créer un
+                            <strong>système d’exploitation indépendant</strong>, alors que la
+                            <strong>virtualisation</strong> permet de créer
+                            <strong>plusieurs environnements virtuels indépendants</strong> avec chacun son
+                            <strong>propre système d’exploitation</strong>, et
+                            <strong>l’outil de virtualisation</strong> est le
+                            <strong>logiciel</strong> qui va réaliser le
+                            <strong>processus de virtualisation</strong>.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -59,23 +91,45 @@
                         <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
                             Type de virtualisation pour les environnements VirtualBox, VMWare Workstation et Stratus
                         </div>
-                    <p class="card-text lh-lg">
+                        <p class="card-text lh-lg">
+                            <strong>Virtualisation de VirtualBox et VMWare Workstation</strong> : sont des
+                            <strong>hyperviseurs de type 2</strong>, c’est-à-dire qu’ils utilisent le
+                            <strong>système d’exploitation de l’ordinateur hôte</strong> pour pouvoir installer
+                            un système d’exploitation hôte comme <strong>Linux</strong> ou <strong>macOS</strong>,
+                            dans la machine virtuelle. En d’autres termes, l’hyperviseur va
+                            <strong>dépendre du système d’exploitation hôte</strong>.
+                        </p>
 
-                        Virtualisation de VirtualBox et VMWare Workstation : sont des hyperviseurs de type 2, c’est-à-dire qu’ils utilisent le système d’exploitation de l’ordinateur hôte pour pouvoir installer un système d’exploitation hôte comme Linux ou macOS, dans la machine virtuelle. En d’autres termes, l’hyperviseur va dépendre du système d’exploitation hôte.
+                        <p class="card-text lh-lg">
+                            <strong>Virtualisation de Stratus</strong> : utilise des
+                            <strong>hyperviseurs de type 1</strong>, c’est-à-dire qu’il va
+                            <strong>directement s’installer sur l’ordinateur</strong> et va
+                            <strong>contrôler ce matériel</strong>. Ainsi il va pouvoir
+                            <strong>allouer les ressources nécessaires</strong> pour installer
+                            <strong>plusieurs machines virtuelles</strong> avec chacun d’entre eux
+                            <strong>différents systèmes d’exploitation</strong>. Ces machines virtuelles
+                            marchent comme des <strong>ordinateurs indépendants</strong> mais
+                            <strong>partagent les ressources</strong> par le biais de l’hyperviseur.
+                        </p>
 
-                        Virtualisation de Stratus : utilise des hyperviseurs de type 1, c’est-à-dire qu’il va directement s’installer sur l’ordinateur et va contrôler ce matériel. Ainsi il va pouvoir allouer les ressources nécessaires pour installer plusieurs machines virtuelles avec chacun d’entre eux différents systèmes d’exploitation. Ces machines virtuelles marchent comme des ordinateurs indépendants mais partagent les ressources par le biais de l’hyperviseur.
+                        <p class="card-text lh-lg">
+                            <strong>Forme / lieu de sauvegarde de la machine virtuelle créée</strong>
+                        </p>
 
+                        <p class="card-text lh-lg">
+                            Sur <strong>VirtualBox</strong>, il nous est demandé de créer un
+                            <strong>disque dur virtuel</strong> en définissant <strong>sa taille</strong> et
+                            <strong>son emplacement</strong> sur l’ordinateur hôte. Donc nous avons
+                            sauvegardé notre <strong>machine virtuelle</strong> dans un
+                            <strong>dossier</strong>, où se trouve <strong>tous les fichiers nécessaires</strong>
+                            au fonctionnement de notre machine virtuelle.
+                        </p>
 
+                        <p class="card-text lh-lg">
+                            <strong>Explication de tous les choix techniques possibles et justification de nos choix</strong>
+                            pendant la création de la machine virtuelle avec <strong>copies d’écran</strong>
+                        </p>
 
-
-
-                        Forme/lieu de sauvegarde de la machine virtuelle créée
-
-                        Sur VirtualBox, il nous est demandé de créer un disque dur virtuel en définissant sa taille et son emplacement sur l’ordinateur hôte. Donc nous avons sauvegardé notre machine virtuelle dans un dossier, où se trouve tout les fichiers nécessaires au fonctionnement de notre machine virtuelle.
-
-
-
-                        Explication de tous les choix techniques possibles et justification de nos choix pendant la création de la machine virtuelle avec copies d’écran </p>
                         <div class="col-md-4 d-flex">
                             <img src="Assets/Images/Question_1.png"
                                  class="img-fluid w-100 object-fit-cover"
@@ -87,15 +141,41 @@
             <div class="col-12 col-sm-12 col-md-11 col-lg-10 col-xl-9">
                 <div class="card shadow">
                     <div class="card-body">
-                        <p class="card-text lh-lg">C’est un onglet divisé en 4 étapes pour initialiser notre machine virtuelle avec son nom, son système d’exploitation, sa RAM et son stockage.
+                        <p class="card-text lh-lg">
+                            C’est un onglet divisé en <strong>4 étapes</strong> pour initialiser notre machine virtuelle avec
+                            <strong>son nom</strong>, <strong>son système d’exploitation</strong>, <strong>sa RAM</strong> et
+                            <strong>son stockage</strong>.
+                        </p>
 
-                        Dans le premier onglet il faut écrire le nom de la machine virtuelle : il est fortement conseillé d’écrire le nom du système d’exploitation comme nom de VM car VirtualBox reconnaît automatiquement le nom de la machine et par conséquence choisi le système d’exploitation portant un nom similaire.
+                        <p class="card-text lh-lg">
+                            Dans le <strong>premier onglet</strong> il faut écrire le <strong>nom de la machine virtuelle</strong> :
+                            il est <strong>fortement conseillé</strong> d’écrire le nom du
+                            <strong>système d’exploitation</strong> comme nom de VM car
+                            <strong>VirtualBox reconnaît automatiquement</strong> le nom de la machine et par
+                            conséquence <strong>choisi le système d’exploitation</strong> portant un nom similaire.
+                        </p>
 
-                        Puis il faut choisir l’ISO : il faut prendre le seul qui nous est proposé et IMPÉRATIVEMENT décocher la case “Proceed with Unattended Installation” qui va se cocher toute seule.
+                        <p class="card-text lh-lg">
+                            Puis il faut choisir <strong>l’ISO</strong> : il faut prendre le <strong>seul</strong> qui nous est proposé
+                            et <strong>IMPÉRATIVEMENT</strong> décocher la case
+                            <strong>“Proceed with Unattended Installation”</strong> qui va se cocher toute seule.
+                        </p>
 
-                        Dans le 3ème onglet il faut définir la RAM allouée à la machine virtuelle. Il est conseillé de définir la RAM allouée selon les capacités de son propre ordinateur. Étant donné que j’ai 32 Go de RAM sur mon ordinateur, j’ai alloué 8 Go de RAM, et 8 processeurs du CPU vu que j’en ai 20.
+                        <p class="card-text lh-lg">
+                            Dans le <strong>3ème onglet</strong> il faut définir la <strong>RAM allouée</strong> à la machine virtuelle.
+                            Il est conseillé de définir la RAM allouée selon les <strong>capacités de son propre ordinateur</strong>.
+                            Étant donné que j’ai <strong>32 Go de RAM</strong> sur mon ordinateur, j’ai alloué
+                            <strong>8 Go de RAM</strong>, et <strong>8 processeurs du CPU</strong> vu que j’en ai <strong>20</strong>.
+                        </p>
 
-                        Dans le 4ème onglet, il faut créer un disque dur en définissant sa taille et son emplacement dans notre pc, laissez l’emplacement par défaut et mettez 80 Gio en taille puis cliquez sur Finish.</p>
+                        <p class="card-text lh-lg">
+                            Dans le <strong>4ème onglet</strong>, il faut <strong>créer un disque dur</strong> en définissant
+                            <strong>sa taille</strong> et <strong>son emplacement</strong> dans notre pc, laissez
+                            <strong>l’emplacement par défaut</strong> et mettez <strong>80 Gio</strong> en taille puis
+                            cliquez sur <strong>Finish</strong>.
+                        </p>
+
+
                         <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
                             Pour la création du compte :
                         </div>
