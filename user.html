@@ -36,8 +36,103 @@
                         <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
                             Utilisateurs
                         </div>
+                        <p class="card-text lh-lg">
+                            Tout d’abord, on clique sur <strong>« Installer »</strong>. Une fois le téléchargement terminé, un écran de confirmation s’affiche et il faut cliquer sur <strong>« Redémarrer maintenant »</strong>.
+                        </p>
+
                         <div class="col-md-4 d-flex">
                             <img src="Assets/Images/Utilisateur_1.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            Après le redémarrage, on déverrouille la session en entrant le mot de passe créé lors de la création du compte. On peut alors accéder à la machine virtuelle.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_2.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            Ensuite, dans le menu <strong>« Périphérique »</strong>, on sélectionne <strong>« Insérer l’image CD des Additions invités »</strong>. Dans le gestionnaire de fichiers, on fait un clic droit dans un espace vide puis on ouvre un terminal.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_3.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            Dans le terminal, on tape la commande <code>sh autorun.sh</code>, puis on entre le mot de passe demandé et on valide avec la touche Entrée.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_4.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_5.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            Une fois l’installation terminée, on redémarre la machine avec la commande <code>sudo reboot</code>. Après le redémarrage, on refait toutes les commandes précédentes sauf <code>sudo apt install bzip2 tar open-vm-tools</code>.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_6.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            On retire ensuite le disque virtuel via <strong>Périphérique &gt; Lecteur optique &gt; Remove disk from virtual drive</strong>.
+                        </p>
+
+
+                        <p class="card-text lh-lg">
+                            Dans les paramètres, on se rend dans <strong>Système</strong>, puis on crée les profils utilisateurs correspondant aux membres du trinôme.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_7.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            On ouvre un terminal depuis le menu en bas à gauche et on édite le fichier de configuration avec la commande <code>nano ./.bashrc</code>. On ajoute les commandes demandées, on sauvegarde avec <strong>CTRL + X</strong> puis <strong>O</strong>, et on ajoute les lignes finales.
+                        </p>
+
+                        <p class="card-text lh-lg">
+                            Ensuite, on affiche les fichiers cachés dans le gestionnaire de fichiers, puis on copie le fichier <code>.bashrc</code> dans le dossier personnel de chaque utilisateur.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_8.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_9.png"
+                                 class="img-fluid w-100 object-fit-cover"
+                                 alt="Illustration">
+                        </div>
+
+                        <p class="card-text lh-lg">
+                            Enfin, on redémarre la machine. Après le redémarrage, la configuration finale apparaît correctement dans le gestionnaire de fichiers, confirmant que l’installation est réussie.
+                        </p>
+
+                        <div class="col-md-4 d-flex">
+                            <img src="Assets/Images/Utilisateur_10.png"
                                  class="img-fluid w-100 object-fit-cover"
                                  alt="Illustration">
                         </div>
